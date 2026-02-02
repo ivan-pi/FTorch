@@ -1,0 +1,21 @@
+name = "FTorch"
+version = "0.1.0"
+license = "license"
+copyright = "Copyright 2019, Institute of Computing for Climate Science"
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+module-naming = false
+
+external-modules = ["torch", "torch_cpu", "c10"]
+link = ["torch", "torch_cpu", "c10"]
+
+[install]
+library = false
+
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
